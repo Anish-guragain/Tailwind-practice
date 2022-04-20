@@ -1,0 +1,49 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='dist/output.css' rel='stylesheet')
+  link(rel='stylesheet' href='https://unpkg.com/swiper@8/swiper-bundle.min.css')
+// Slider main container
+.swiper.flex(class='h-[10rem] md:h-[30rem]')
+  // Additional required wrapper
+  .swiper-wrapper
+    // Slides
+    .swiper-slide
+      img.object-center.object-fill.w-full.h-full(src='img/20.jpg' alt='')
+    .swiper-slide
+      img.object-center.object-fill.w-full.h-full(src='img/30.webp' alt='')
+    .swiper-slide
+      img.object-center.object-fill.w-full.h-full(src='img/20.jpg' alt='')
+    |                ...
+  // navigation buttons
+  .swiper-button-prev.bg-orange-700.rounded-full.h-4.w-4.overflow-hidden.text-white.text-xs(class='md:h-[2rem] md:w-[2rem]')  
+  .swiper-button-next.bg-orange-700.rounded-full.h-4.w-4.overflow-hidden.text-white.text-xs(class='md:h-[2rem] md:w-[2rem]')
+// search function
+// create search barr
+.flex.justify-center
+  .mb-2.mt-4.justify-center(class='sm:flex w-[50%]')
+    .input-group.flex.flex-wrap.items-stretch.w-full.mb-2
+      input.form-control.relative.flex-auto.min-w-0.block.px-3.text-base.font-normal.text-gray-700.bg-white.bg-clip-padding.border.border-solid.border-gray-300.rounded.transition.ease-in-out.m-0.shadow-2xl(type='search' class='h-[2.5rem] py-1.5 sm:rounded-l-lg focus:text-gray-700 focus:bg-white focus:outline-none' placeholder='Find you package' aria-label='Search' aria-describedby='button-addon3')
+    .flex.flex-wrap.justify-center.mb-4
+      button#button-addon3   .btn.flex.px-6.py-2.border-2.text-white.bg-green-600.font-medium.text-xs.leading-tight.uppercase.rounded.transition.duration-150.ease-in-out(class='h-[2.5rem] w-[6rem] hover:bg-white hover:text-green-600 hover:border-green-600 sm:rounded-r-lg focus:outline-none focus:ring-0' type='button') Search
+script(src='https://cdn.tailwindcss.com')
+script(defer='' src='https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js')
+script(src='https://unpkg.com/swiper@8/swiper-bundle.min.js')
+// Slider code
+script.
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  speed:400,
+  spacebetween: 100,
+  loop: true,
+  autoplay: {
+  delay: 3000,
+  disableOnInteraction: false,
+  },
+  // Navigation arrows
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+  },
+  });
