@@ -1,30 +1,48 @@
 <!doctype html>
 <html class="text-[13px]">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="dist/output.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body >
-        <div class=" bg-[#7dd1d1] w-full h-screen flex flex-col justify-center items-center ">
-            <h1 class="text-xl font-bold">ID card</h1>
-            <div class="bg-[url('/src/img/id.png')]  w-[19rem] h-[34rem]  border-y-8 border-yellow-300">
-            <div class=" flex justify-center items-end h-1/2 ">
-                         <img class=" rounded-full h-32 w-32 absolute   " src="/src/img/80.jpg" alt="">
-                    </div>
-            
-            <div class="h-1/2 mt-3 pl-8   ">
-                <p class="mb-3"> <b> Name</b>: &nbsp Anish Guragain</p>
-                <p class="mb-3"> <b> Email</b>:&nbsp samplemail123@gmail.com</p>
-                <p class="mb-3"> <b> Phone</b>: &nbsp 123456789</p>
-                <p class="mb-3"> <b> Address</b>:&nbsp Kathmandu, Nepal</p>
-                <p class="mb-3"> <b> Membe</b>r ID:&nbsp12485487</p>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="dist/output.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body >
+      <div class=" bg-[#7dd1d1] w-full h-screen flex flex-col justify-center items-center ">
+         <h1 class="text-xl font-bold">ID card</h1>
+         <div class="bg-[url('/src/img/aa.jpg')] bg-no-repeat bg-cover  w-[19rem] h-[34rem] flex flex-col justify-between ">
+            <div class="flex justify-center items-center pt-2 ">
+               <div class="logo ">
+                  <img class=" rounded-full h-12 w-13  " src="/src/img/logo-removebg-preview.png" alt="">
+               </div>
+               <h1 class="font-bold pl-1">Society of Nepalese Anatomists</h1>
             </div>
+            <div class=" flex justify-center items-end pt-4 ">
+               <img class=" rounded-full h-32 w-32  " src="/src/img/80.jpg" alt="">
             </div>
-            
-        
-        </div>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </body>
+            <div class=" pl-8   ">
+               <p class="mb-3"> <b> Name</b>: &nbsp Anish Guragain</p>
+               <p class="mb-3"> <b> Email</b>:&nbsp samplemail123@gmail.com</p>
+               <p class="mb-3"> <b> Phone</b>: &nbsp 123456789</p>
+               <p class="mb-3"> <b> Address</b>:&nbsp Kathmandu, Nepal</p>
+               <p class="mb-3"> <b> Member</b> ID:&nbsp12485487</p>
+            </div>
+
+            <div class="Qr flex justify-center">
+                <img class="  h-20 w-20  " src="/src/img/qr.jpg" alt="">
+             </div>
+            <div class="flex justify-between  bg-blue-200">
+               <!-- Organization name and contact information -->
+               <div class=" flex">
+                  <p class="text-sm">
+                     Kathmandu, Nepal. &nbsp
+                  </p>
+                  <p class="text-sm">
+                     01-4452865,    01-4452865
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://cdn.tailwindcss.com"></script>
+   </body>
 </html>
